@@ -1,17 +1,18 @@
-// MusicService.kt
+
 import android.app.*
 import android.content.Intent
 import android.media.MediaPlayer
 import android.os.IBinder
 import androidx.core.app.NotificationCompat
 import com.example.servicesinandroidstudio.MainActivity
+import com.example.servicesinandroidstudio.R
 
 class MusicService : Service() {
     private lateinit var mediaPlayer: MediaPlayer
 
     override fun onCreate() {
         super.onCreate()
-        mediaPlayer = MediaPlayer.create(this, R.raw.your_music_file)
+        mediaPlayer = MediaPlayer.create(this, R.raw.hello_world)
         mediaPlayer.isLooping = true
     }
 
